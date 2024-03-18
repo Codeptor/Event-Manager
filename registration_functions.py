@@ -1,4 +1,5 @@
 import tkinter as tk
+import tkinter.ttk as ttk
 from tkinter import messagebox
 import database
 import sqlite3
@@ -42,3 +43,4 @@ def register_for_event(user_id, event_id):
         return True
     except sqlite3.IntegrityError:
         return False
+    
